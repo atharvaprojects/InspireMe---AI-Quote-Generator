@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - InspireMe</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #2a2a72, #009ffd); /* Deep Blue Gradient */
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        header {
+            background: black;
+            padding: 15px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #009ffd;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 40px 20px;
+        }
+
+        .contact h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .contact p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 0 auto 20px;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        input {
+            height: 40px;
+        }
+
+        textarea {
+            height: 100px;
+            resize: none;
+        }
+
+        /* 🔥 Corrected Send Message Button Color */
+        button {
+            background: linear-gradient(to right, #ff512f, #dd2476); /* Vivid Red-Pink Gradient */
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 50px; /* Rounded edges */
+            transition: 0.3s;
+            font-weight: bold;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Hover Effect - Slightly Brighter & Scales Up */
+        button:hover {
+            background: linear-gradient(to right, #dd2476, #ff512f); /* Reverse Gradient */
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(255, 81, 47, 0.5);
+        }
+
+        /* Footer */
+        footer {
+            background: black;
+            padding: 15px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quotes.html">Quotes</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <h2>Get in Touch</h2>
+        <p>Have any suggestions? Want to contribute? Reach out to us!</p>
+        
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 InspireMe. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
